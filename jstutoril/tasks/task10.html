@@ -10,13 +10,13 @@
             var t1= document.getElementById("t1").value
             var t2= document.getElementById("t2").value
             var RS = document.getElementById("result")
-            if(t1<t2)
-        {
-            RS.innerHTML=t1 + " is smallest"
-        }
-        else if(t2<t1)
+            if(t1>t2)
         {
             RS.innerHTML=t2 + " is smallest"
+        }
+        else
+        {
+            RS.innerHTML=t1 + " is smallest"
         }
         }
     </script>
@@ -24,8 +24,8 @@
 <body>
     <!-- 9.	Write a program to find smallest no between nos entered by user -->
     <p>
-        enter number: <input type="number" id="t1">
-        enter number 1: <input type="number" id="t2">
+        enter number: <input type="text" id="t1">
+        enter number 1: <input type="text" id="t2">
      </p>
      <input type="button" value="check" onclick="fun1()">
      <p id="result">
